@@ -30,7 +30,7 @@ jobs:
         run: npm install
 
       - name: Build Studio
-        run: npm run build
+        run: sanity build
 
       - name: Deploy Studio
-        run: npm run deploy
+        run: sanity deploy
