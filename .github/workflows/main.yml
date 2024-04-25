@@ -27,10 +27,10 @@ jobs:
           key: node-modules-${{ hashFiles('package-lock.json') }}
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Studio
-        run: sanity build
+        run: npx sanity build
 
       - name: Deploy Studio
-        run: sanity deploy
+        run: npx sanity deploy
